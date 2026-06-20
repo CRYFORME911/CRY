@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Master</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+English Master
+</div>
+
+<ul>
+<li><a href="#home">首页</a></li>
+<li><a href="#word">单词</a></li>
+<li><a href="#quiz">测试</a></li>
+<li><a href="#stats">统计</a></li>
+</ul>
+
+<button id="themeBtn">
+🌙
+</button>
+
+</nav>
+
+<section id="home" class="hero">
+
+<h1>
+Master English Faster
+</h1>
+
+<p>
+每天学习一点点，进步看得见
+</p>
+
+<button class="start-btn">
+开始学习
+</button>
+
+</section>
+
+<section id="word">
+
+<h2>今日单词</h2>
+
+<div class="card">
+
+<h3 id="wordText">
+Adventure
+</h3>
+
+<p id="meaningText">
+冒险
+</p>
+
+<button onclick="speakWord()">
+🔊 发音
+</button>
+
+</div>
+
+</section>
+
+<section id="quiz">
+
+<h2>英语测验</h2>
+
+<div class="card">
+
+<p>
+Adventure 的意思是？
+</p>
+
+<label>
+<input type="radio" name="answer" value="1">
+冒险
+</label>
+
+<label>
+<input type="radio" name="answer" value="2">
+和平
+</label>
+
+<label>
+<input type="radio" name="answer" value="3">
+成功
+</label>
+
+<label>
+<input type="radio" name="answer" value="4">
+快乐
+</label>
+
+<button onclick="checkQuiz()">
+提交
+</button>
+
+<p id="quizResult"></p>
+
+</div>
+
+</section>
+
+<section id="stats">
+
+<h2>学习统计</h2>
+
+<div class="stats-container">
+
+<div class="stat-card">
+<h3 id="days">
+1
+</h3>
+<p>学习天数</p>
+</div>
+
+<div class="stat-card">
+<h3 id="words">
+0
+</h3>
+<p>完成单词</p>
+</div>
+
+<div class="stat-card">
+<h3 id="accuracy">
+0%
+</h3>
+<p>正确率</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 English Master
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

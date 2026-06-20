@@ -1,0 +1,68 @@
+const word = "Adventure";
+
+let learnedWords = 0;
+let correct = 0;
+
+function speakWord(){
+
+const utter =
+new SpeechSynthesisUtterance(word);
+
+utter.lang="en-US";
+
+speechSynthesis.speak(utter);
+
+}
+
+function checkQuiz(){
+
+const answer =
+document.querySelector(
+'input[name="answer"]:checked'
+);
+
+if(!answer){
+alert("请选择答案");
+return;
+}
+
+if(answer.value==="1"){
+
+document.getElementById(
+"quizResult"
+).innerHTML="✅ 回答正确";
+
+correct=100;
+learnedWords++;
+
+}else{
+
+document.getElementById(
+"quizResult"
+).innerHTML="❌ 回答错误";
+
+correct=0;
+}
+
+document.getElementById(
+"words"
+).innerText=learnedWords;
+
+document.getElementById(
+"accuracy"
+).innerText=
+correct+"%";
+}
+
+const themeBtn =
+document.getElementById(
+"themeBtn"
+);
+
+themeBtn.onclick=()=>{
+
+document.body.classList.toggle(
+"dark"
+);
+
+};
