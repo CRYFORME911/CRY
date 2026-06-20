@@ -23,13 +23,10 @@
         <ul>
             <li><a href="#home">首页</a></li>
             <li><a href="#word">单词</a></li>
-            <li><a href="#quiz">测试</a></li>
             <li><a href="#stats">统计</a></li>
         </ul>
 
-        <button id="themeBtn">
-            🌙
-        </button>
+        <button id="themeBtn">🌙</button>
 
     </nav>
 
@@ -48,73 +45,27 @@
 
     <section id="word">
 
-        <h2>今日单词</h2>
+        <h2>单词学习</h2>
 
         <div class="card">
 
-    <h3 id="wordText">
-        Loading...
-    </h3>
+            <h3 id="wordText">
+                Adventure
+            </h3>
 
-    <p id="meaningText">
-        正在加载
-    </p>
-
-    <button onclick="speakWord()">
-        🔊 发音
-    </button>
-
-    <button onclick="nextWord()">
-        ➡️ 下一词
-    </button>
-
-</div>
-
-    </section>
-
-    <section id="quiz">
-
-        <h2>英语测验</h2>
-
-        <div class="card">
-
-            <p style="margin-bottom:20px;">
-                Adventure 的意思是？
+            <p id="meaningText">
+                冒险
             </p>
 
-            <label>
-                <input type="radio" name="answer" value="1">
-                冒险
-            </label>
+            <br>
 
-            <br><br>
-
-            <label>
-                <input type="radio" name="answer" value="2">
-                和平
-            </label>
-
-            <br><br>
-
-            <label>
-                <input type="radio" name="answer" value="3">
-                成功
-            </label>
-
-            <br><br>
-
-            <label>
-                <input type="radio" name="answer" value="4">
-                快乐
-            </label>
-
-            <br><br>
-
-            <button onclick="checkQuiz()">
-                提交答案
+            <button onclick="speakWord()">
+                🔊 发音
             </button>
 
-            <p id="quizResult" style="margin-top:20px;"></p>
+            <button onclick="nextWord()">
+                ➡️ 下一词
+            </button>
 
         </div>
 
@@ -128,31 +79,21 @@
 
             <div class="stat-card">
 
-                <h3 id="days">
-                    1
-                </h3>
-
-                <p>学习天数</p>
-
-            </div>
-
-            <div class="stat-card">
-
                 <h3 id="words">
                     0
                 </h3>
 
-                <p>完成单词</p>
+                <p>已学习单词</p>
 
             </div>
 
             <div class="stat-card">
 
                 <h3 id="accuracy">
-                    0%
+                    100%
                 </h3>
 
-                <p>正确率</p>
+                <p>学习状态</p>
 
             </div>
 
